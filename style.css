@@ -1,0 +1,79 @@
+body {
+    font-family: 'Sono', sans-serif;
+    /* margin: 0; */
+    /* background-color: #f0f0f0; */
+  }
+  .pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 15px; /* Add border-radius for curved edges */
+    background-color: #9DB2BF;
+  }
+
+  .pricing-plan{
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 300px;
+    transition: transform 0.2s ease-in-out; /* Add a transition effect */
+  }
+
+  .pricing-plan:hover {
+    transform: scale(1.05); /* Scale up the element on hover */
+  }
+
+  .plan-button {
+    background-color: #EA906C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add a transition effect */
+  }
+
+  .plan-button:hover {
+    transform: translateY(-10px) scale(1.1); /* Move up and scale */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+   }
+
+  .plan-features{
+    list-style: none;
+    /* To remove any default indentation */
+    padding-left: 0; 
+  }
+  .plan-features li {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+  }
+  hr {
+    margin: 15px 0; /* Add some margin for spacing */
+    border: none; /* Remove default border */
+    height: 2px; /* Set the height to make it thicker */
+    background-color: #ccc; /* Set the background color to gray */
+  }
+
+  .plan-title{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .plan-price{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (max-width: 1250px) {
+    .pricing-container{
+      flex-direction: column !important;
+    }
+  }
